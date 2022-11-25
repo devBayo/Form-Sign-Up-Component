@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CashToken</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <!-- First form -->
+      <section class="auth-section">
+        <form class="form">
+          <h2 class="form-title">Create Your New CashToken Account</h2>
+          <div class="form-group">
+            <label class="form-label" for="phone-number">Phone number</label>
+            <div class="form-grid-input">
+              <div class="inner-form">
+                <input
+                  type="number"
+                  class="form-input form-input-number"
+                  id="phone-number"
+                  placeholder="Country code"
+                  required
+                />
+                <label class="inner-label">Country code</label>
+              </div>
+              <div class="inner-form">
+                <input
+                  type="number"
+                  class="form-input form-input-number"
+                  placeholder="Example: 0802 123 4567"
+                  required
+                />
+                <label class="inner-label">Example: 0802 123 4567</label>
+              </div>
+            </div>
+          </div>
+          <div class="form-group form-group-half-width">
+            <label class="form-label" for="password"
+              >Choose Your Password</label
+            >
+            <input
+              type="password"
+              placeholder="Enter your password"
+              id="password"
+              class="form-input"
+              required
+            />
+          </div>
+          <div
+            class="form-group form-group-half-width form-group-half-width__right"
+          >
+            <label class="form-label" for="confirm-password"
+              >Confirm Password</label
+            >
+            <input
+              class="form-input"
+              type="password"
+              placeholder="Confirm your password"
+              id="confirm-password"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="referrer-code"
+              >Referrer Code (Optional)</label
+            >
+            <input
+              type="text"
+              class="form-input"
+              placeholder="Enter referrer code if any"
+              id="referrer-code"
+            />
+          </div>
+          <div class="form-group form-group-captcha">
+            <div class="form-input form-input-captcha">
+              <ion-icon name="shield-checkmark" class="input-icon"></ion-icon>
+              I am human
+            </div>
+          </div>
+
+          <div class="form-group">
+            <p class="form-text">
+              By clicking <span class="primary-text">Submit</span> below, you
+              agree to your
+              <a class="form-link" href="#">terms of service</a> and
+              <a class="form-link" href="#">privacy policy.</a>
+            </p>
+          </div>
+
+          <button type="submit" class="form-button btn-primary">Submit</button>
+
+          <div class="form-group">
+            <div class="form-alt"></div>
+
+            <button type="button" class="form-button btn-secondary">
+              Register with Email
+            </button>
+
+            <p class="form-auth-alt-option">
+              Already have an account? <a class="form-link" href="#">Sign in</a>
+            </p>
+          </div>
+        </form>
+      </section>
+      <!-- End of first form -->
+
+      <!-- Second form -->
+      <section class="auth-section hidden">
+        <form class="form">
+          <h2 class="form-title">Complete Your CashToken Account Setup</h2>
+          <div class="form-group">
+            <p class="form-label form-label-big">Account Type</p>
+            <p class="form-text">
+              Choose an account type that bests describe you to get the most out
+              of account and have instant access to targeted features.
+            </p>
+            <p class="form-text">
+              You will be able to always change/combine this later on your
+              profile page
+            </p>
+          </div>
+
+          <div class="form-radio-group">
+            <div class="form-radio">
+              <input
+                type="radio"
+                required
+                id="individual"
+                name="account-type"
+                class="radio individual"
+                checked
+              />
+              <label for="individual">I am an individual</label>
+            </div>
+            <div class="form-radio">
+              <input
+                type="radio"
+                required
+                id="brand"
+                name="account-type"
+                class="radio brand"
+              />
+              <label for="brand">I am a Brand / Business</label>
+            </div>
+          </div>
+
+          <div
+            class="form-group form-radio-target form-individual form-group-half-width"
+          >
+            <label class="form-label" for="first-name">First Name</label>
+            <input
+              type="text"
+              placeholder="Enter your first name"
+              id="first-name"
+              class="form-input"
+            />
+          </div>
+          <div
+            class="form-group form-radio-target form-individual form-group-half-width form-group-half-width__right"
+          >
+            <label class="form-label" for="last-name">Last Name</label>
+            <input
+              class="form-input"
+              type="text"
+              placeholder="Enter your last name"
+              id="last-name"
+            />
+          </div>
+
+          <div class="form-group form-radio-target form-individual">
+            <label class="form-label" for="gender">Gender</label>
+            <select id="gender" class="form-input">
+              <option value="">Select Gender</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
+          </div>
+
+          <div
+            class="form-group form-radio-target form-group-brand-name form-brand hidden"
+          >
+            <label class="form-label" for="brand-name">Brand Name</label>
+            <input
+              type="text"
+              class="form-input"
+              placeholder="Enter your brand name"
+              id="brand-name"
+            />
+          </div>
+
+          <button type="submit" class="form-button btn-primary">Submit</button>
+        </form>
+      </section>
+      <!-- End of second form -->
+
+      <!-- Third form -->
+      <section class="auth-section hidden">
+        <form class="form">
+          <h2 class="form-title">Confirm Your Identity</h2>
+          <div class="form-group">
+            <p class="form-text">
+              You are currently signed in as
+              <span class="primary-text">Ibrahim Olarenwaju(23481***6606)</span
+              >. Enter your password below to continue with your current account
+            </p>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="cpassword">Password</label>
+            <input
+              type="password"
+              class="form-input"
+              placeholder="Enter your password"
+              id="cpassword"
+              required
+            />
+          </div>
+
+          <button type="submit" class="form-button btn-primary">Submit</button>
+        </form>
+      </section>
+      <!-- End of third form -->
+    </main>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
